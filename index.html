@@ -156,6 +156,7 @@
       position: relative;
       width: min(60vw, 380px);
       margin: 0 auto;
+      container-type: inline-size;
     }
 
     .device {
@@ -185,11 +186,15 @@
       width: 100%;
       aspect-ratio: 4 / 3;
       border-radius: 16px;
+      border-radius: clamp(8px, 4.2cqw, 16px);
       padding: 8px;
       animation: up 0.6s 0.1s ease both;
     }
 
-    .device-ipad .device-screen { border-radius: 4px; }
+    .device-ipad .device-screen {
+      border-radius: 4px;
+      border-radius: clamp(2px, 1.1cqw, 4px);
+    }
 
     .device-ipad::before {
       content: '';
@@ -209,12 +214,16 @@
       width: 28%;
       aspect-ratio: 9 / 19.5;
       border-radius: 22px;
+      border-radius: clamp(14px, 5.8cqw, 22px);
       padding: 3.5px;
       z-index: 3;
       animation: up 0.6s 0.2s ease both;
     }
 
-    .device-iphone .device-screen { border-radius: 19px; }
+    .device-iphone .device-screen {
+      border-radius: 19px;
+      border-radius: clamp(12px, 5.35cqw, 19px);
+    }
 
     .device-iphone::before {
       content: '';
@@ -223,7 +232,7 @@
       top: 7px;
       transform: translateX(-50%);
       width: 36%; height: 6px;
-      border-radius: 8px;
+      border-radius: 999px;
       background: #050506;
       z-index: 2;
     }
