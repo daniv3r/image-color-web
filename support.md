@@ -7,7 +7,7 @@ title: Support
 
 If you have a question, found a bug, or need help with Flow Master: Image Coloring, we're here to help.
 
-**Email support:** daniil.veramei+feedback@gmail.com
+**Email support:** fun-tapper-6s@icloud.com
 
 Please include a brief description of the issue and, if applicable, the device model and iOS version you are running.
 
