@@ -1,3 +1,7 @@
-title: "Flow Master: Image Coloring"
-description: Turn any photo into a paint-by-numbers canvas
+title: "PicNum: Paint by Number"
+description: Turn photos into personal paint-by-numbers artwork
 theme: minima
+
+# Add the final App Store product URL after the app record is public.
+# Until then, the home page displays a non-interactive "Coming soon" message.
+app_store_url: ""
