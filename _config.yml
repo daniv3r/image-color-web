@@ -2,6 +2,5 @@ title: "PicNum: Paint by Number"
 description: Turn photos into personal paint-by-numbers artwork
 theme: minima
 
-# Add the final App Store product URL after the app record is public.
-# Until then, the home page displays a non-interactive "Coming soon" message.
-app_store_url: ""
+# App Store product URL used by the home page badge.
+app_store_url: "https://apps.apple.com/app/picnum-paint-by-number/id6811361960"
