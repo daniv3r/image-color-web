@@ -1,10 +1,36 @@
----
-layout: home
-title: "PicNum: Paint by Number — Turn Photos into Artwork"
-description: PicNum turns a photo you love into a personal paint-by-numbers canvas you can color one region at a time.
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PicNum: Paint by Number — Turn Photos into Artwork</title>
+<meta name="description" content="PicNum turns a photo you love into a personal paint-by-numbers canvas you can color one region at a time." />
+<meta name="theme-color" content="#f8f4ee" />
+<link rel="icon" href="assets/icon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500;1,9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
 
-<!-- HERO -->
+</head>
+<body class="page-home">
+
+  <header class="site-nav">
+  <a href="index.html" class="nav-logo" aria-label="PicNum home"><img src="assets/icon.png" alt="" width="34" height="34" />PicNum</a>
+  <nav aria-label="Primary">
+    <ul class="nav-links">
+      <li><a href="index.html#how">How it works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-nav" href="https://apps.apple.com/app/picnum-paint-by-number/id6811361960">Download</a>
+</header>
+
+
+  <main>
+    <!-- HERO -->
 <section class="hero">
   <div class="wrap hero-copy">
     <span class="eyebrow">Photo → Paint by Numbers</span>
@@ -14,7 +40,8 @@ description: PicNum turns a photo you love into a personal paint-by-numbers canv
       a calm, creative way to relive your favorite moments.
     </p>
     <div class="hero-cta">
-      {% include badge.html cls="badge-hero" %}
+      <a class="badge badge-hero" href="https://apps.apple.com/app/picnum-paint-by-number/id6811361960" aria-label="Download PicNum on the App Store"><img src="App_Store_Badge.svg" alt="Download on the App Store" width="120" height="40" /></a>
+
       <div class="cta-note"><b>Free samples to try</b>No account required</div>
     </div>
   </div>
@@ -116,6 +143,22 @@ description: PicNum turns a photo you love into a personal paint-by-numbers canv
     <img class="app-icon" src="assets/icon.png" width="256" height="256" loading="lazy" alt="PicNum app icon" />
     <h2>Your next favorite photo is a <em>painting.</em></h2>
     <p>Made for iPhone and iPad. Try a free sample, then paint your own.</p>
-    <div class="badge-row">{% include badge.html cls="badge-closer" %}</div>
+    <div class="badge-row"><a class="badge badge-closer" href="https://apps.apple.com/app/picnum-paint-by-number/id6811361960" aria-label="Download PicNum on the App Store"><img src="App_Store_Badge.svg" alt="Download on the App Store" width="120" height="40" /></a>
+</div>
   </div>
 </section>
+
+  </main>
+
+  <footer class="site-footer">
+  <span class="footer-copy">© 2026 PicNum</span>
+  <ul class="footer-links">
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="terms.html">Terms of Use</a></li>
+  </ul>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — PicNum: Paint by Number</title>
+<meta name="description" content="How PicNum collects, uses, stores, and deletes photos and related app data." />
+<meta name="theme-color" content="#f8f4ee" />
+<link rel="icon" href="assets/icon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500;1,9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+
+</head>
+<body class="page-doc">
+
+  <header class="site-nav">
+  <a href="index.html" class="nav-logo" aria-label="PicNum home"><img src="assets/icon.png" alt="" width="34" height="34" />PicNum</a>
+  <nav aria-label="Primary">
+    <ul class="nav-links">
+      <li><a href="index.html#how">How it works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-nav" href="https://apps.apple.com/app/picnum-paint-by-number/id6811361960">Download</a>
+</header>
+
+
+  <main class="doc">
+    <h1>Privacy Policy</h1>
+    <p class="page-meta">Last updated: September 21, 2026</p>
+    <div class="content">
+      <p>This policy explains how PicNum collects, uses, stores, shares, and deletes information when you use the app or contact support.</p>
+
+<h2 id="information-picnum-processes">Information PicNum Processes</h2>
+
+<p><strong>Photos you select</strong> — PicNum uses Apple’s system photo picker, so the app receives only the item you choose. The selected photo is uploaded to our server to generate a paint-by-numbers canvas.</p>
+
+<p><strong>Generated content and job data</strong> — our server temporarily stores the generated painting document, numbered regions, palette, previews, job status, difficulty, timestamps, and technical processing information. Your painting library, coloring progress, and color edits are saved locally on your device; they are not synchronized through an account.</p>
+
+<p><strong>Anonymous client identifier</strong> — the app creates a random identifier and stores it in the iOS Keychain. The backend uses it to keep jobs private to the app installation, apply rate limits, maintain the credit balance, and connect purchase events. We do not require a name, email address, Apple Account, or PicNum account, but data associated with this persistent identifier is treated as linked data for App Store privacy disclosure purposes.</p>
+
+<p><strong>Purchases</strong> — Apple processes App Store payments. RevenueCat sends purchase and entitlement information to PicNum so we can grant credits, prevent duplicate grants, process revocations or refunds, and troubleshoot purchase problems. PicNum does not receive your full payment-card details.</p>
+
+<p><strong>Diagnostics and support messages</strong> — the app writes diagnostic events to Apple’s local logging system. If you choose <strong>Report a Problem</strong>, the message can include the app and OS versions, device model, environment, timestamp, context, and shortened client and job identifiers. It does not automatically attach your photo or painting. Email providers process anything you choose to send.</p>
+
+<p><strong>Technical service data</strong> — our servers and infrastructure providers may process an IP address, request time, requested endpoint, response status, and security or error information needed to operate and protect the service.</p>
+
+<h2 id="how-we-use-your-information">How We Use Your Information</h2>
+
+<ul>
+  <li>To generate your paint-by-numbers painting from a photo you choose</li>
+  <li>To deliver generated painting data to your device</li>
+  <li>To save local painting progress on your device</li>
+  <li>To verify purchases, grant or refund credits, and prevent duplicate grants</li>
+  <li>To secure the service, enforce rate limits, prevent abuse, and diagnose failures</li>
+  <li>To respond to support, privacy, and legal requests</li>
+</ul>
+
+<p>PicNum does not sell personal information, use it for third-party advertising, or track you across other companies’ apps and websites.</p>
+
+<h2 id="photo-handling">Photo Handling</h2>
+
+<p>Your original photo is used only to generate the requested painting. After a successful conversion, the service attempts to delete it immediately. If conversion or immediate deletion fails, the upload is scheduled for deletion within seven days. Photos are not used to train machine-learning models. They are not routinely reviewed by people; access is limited to what is necessary for support, security, service operation, or legal obligations.</p>
+
+<h2 id="retention">Retention</h2>
+
+<ul>
+  <li>Original photos are normally deleted immediately after successful conversion; failed or undeleted uploads are scheduled for deletion within 7 days.</li>
+  <li>Standard generated painting artifacts are scheduled for deletion after 60 days.</li>
+  <li>Internal conversion-debug artifacts are scheduled for deletion after 14 days.</li>
+  <li>Raw RevenueCat webhook payloads are retained for 30 days and then removed. A limited transaction summary may be retained longer to prevent duplicate grants and support financial or legal obligations.</li>
+  <li>Local paintings, progress, and preferences remain on your device until the app and its local data are deleted. The anonymous client identifier is stored in the iOS Keychain and may persist after app deletion under normal iOS behavior.</li>
+  <li>Database job records, the anonymous client identifier, credit ledger, summarized transaction records, security logs, and support correspondence may be retained while needed to operate the credit balance, prevent fraud, resolve disputes, satisfy accounting or legal duties, and process deletion requests. Where a record must be preserved, we delete or anonymize information that is no longer necessary when reasonably possible.</li>
+</ul>
+
+<p>Deletion schedules depend on the production cleanup service operating correctly. If an automated deletion fails, the item remains queued for deletion and can be removed through the manual process described below.</p>
+
+<h2 id="third-party-services">Third-Party Services</h2>
+
+<p>PicNum uses service providers only to operate the app, store and process data, deliver purchases, provide network infrastructure, and respond to support requests. They may process information in countries other than your own and are required to protect it consistently with their agreements and applicable law.</p>
+
+<ul>
+  <li><a href="https://www.apple.com/legal/privacy/">Apple</a> — App Store distribution, in-app payments, system photo selection, and optional Apple diagnostics</li>
+  <li><a href="https://www.revenuecat.com/privacy/">RevenueCat</a> — purchase validation, entitlement events, and credit-purchase lifecycle information</li>
+  <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> — R2 object storage for temporary uploaded photos and generated artifacts</li>
+  <li><a href="https://supabase.com/privacy">Supabase</a> — hosted PostgreSQL database for anonymous identifiers, jobs, credits, and transaction records</li>
+  <li><a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud</a> — production application hosting and server logs</li>
+  <li><strong>DuckDNS</strong> — domain-name resolution for the production API</li>
+</ul>
+
+<h2 id="data-storage-and-security">Data Storage and Security</h2>
+
+<p>We use encrypted HTTPS connections, signed sessions, access controls, private object storage, rate limits, and operational monitoring intended to protect information from unauthorized access, alteration, loss, or disclosure. No internet service can guarantee absolute security.</p>
+
+<h2 id="your-rights">Your Rights</h2>
+
+<p>Depending on where you live, you may have rights to request access, correction, deletion, restriction, portability, or an objection to certain processing. You may also withdraw consent where processing relies on consent and complain to your local data-protection authority.</p>
+
+<p>Because PicNum has no account or email login, we cannot find backend records from your email address alone. To request deletion, use <strong>Report a Problem</strong> in the app and keep the diagnostic section containing the client-ID suffix, or contact support with that suffix and an approximate conversion date. We will verify the request, delete eligible server artifacts and records, and explain any limited transaction or security records that must be retained.</p>
+
+<p>To remove locally stored paintings and progress, delete the app and its local data through iOS. Keychain data can persist after app deletion according to iOS behavior; contact support if you also want associated server records removed.</p>
+
+<h2 id="childrens-privacy">Children’s Privacy</h2>
+
+<p>PicNum is not directed at children and does not knowingly collect personal information from children. A parent or guardian who believes a child submitted information can contact us to request deletion.</p>
+
+<h2 id="changes-to-this-policy">Changes to This Policy</h2>
+
+<p>We may update this policy when the app, service providers, or legal requirements change. We will update the date above and provide additional notice when required.</p>
+
+<h2 id="contact">Contact</h2>
+
+<p>For privacy questions or requests, visit <a href="support.html">Support</a> or email <a href="mailto:fun-tapper-6s@icloud.com?subject=PicNum%20Privacy%20Request">fun-tapper-6s@icloud.com</a>.</p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <span class="footer-copy">© 2026 PicNum</span>
+  <ul class="footer-links">
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="terms.html">Terms of Use</a></li>
+  </ul>
+</footer>
+
+
+</body>
+</html>
