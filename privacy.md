@@ -2,7 +2,7 @@
 layout: default
 title: Privacy Policy
 description: How PicNum collects, uses, stores, and deletes photos and related app data.
-updated: September 21, 2026
+updated: October 4, 2026
 ---
 
 This policy explains how PicNum collects, uses, stores, shares, and deletes information when you use the app or contact support.
@@ -17,6 +17,8 @@ This policy explains how PicNum collects, uses, stores, shares, and deletes info
 
 **Purchases** — Apple processes App Store payments. RevenueCat sends purchase and entitlement information to PicNum so we can grant credits, prevent duplicate grants, process revocations or refunds, and troubleshoot purchase problems. PicNum does not receive your full payment-card details.
 
+**Anonymous product analytics** — the app and our server send anonymous usage events to PostHog, such as a photo conversion finishing, how far a painting has progressed, the paywall being shown, and a purchase being completed. Each event carries an install identifier made from your anonymous client identifier by one-way hashing, the app version and build, the difficulty or screen involved, and whether the build is a test build. Events never include your photos, paintings, names, email address, device model, or operating-system details, and PostHog is configured not to create user profiles or to store your IP address or location. The app does not ask for permission to track you.
+
 **Diagnostics and support messages** — the app writes diagnostic events to Apple's local logging system. If you choose **Report a Problem**, the message can include the app and OS versions, device model, environment, timestamp, context, and shortened client and job identifiers. It does not automatically attach your photo or painting. Email providers process anything you choose to send.
 
 **Technical service data** — our servers and infrastructure providers may process an IP address, request time, requested endpoint, response status, and security or error information needed to operate and protect the service.
@@ -27,6 +29,7 @@ This policy explains how PicNum collects, uses, stores, shares, and deletes info
 - To deliver generated painting data to your device
 - To save local painting progress on your device
 - To verify purchases, grant or refund credits, and prevent duplicate grants
+- To understand which parts of the app are used and where people stop, using the anonymous analytics events above
 - To secure the service, enforce rate limits, prevent abuse, and diagnose failures
 - To respond to support, privacy, and legal requests
 
@@ -55,6 +58,7 @@ PicNum uses service providers only to operate the app, store and process data, d
 - [RevenueCat](https://www.revenuecat.com/privacy/) — purchase validation, entitlement events, and credit-purchase lifecycle information
 - [Cloudflare](https://www.cloudflare.com/privacypolicy/) — R2 object storage for temporary uploaded photos and generated artifacts
 - [Supabase](https://supabase.com/privacy) — hosted PostgreSQL database for anonymous identifiers, jobs, credits, and transaction records
+- [PostHog](https://posthog.com/privacy) — anonymous product analytics events from the app and our server, processed in the EU region
 - [Google Cloud](https://cloud.google.com/terms/cloud-privacy-notice) — production application hosting and server logs
 - **DuckDNS** — domain-name resolution for the production API
 
@@ -66,7 +70,7 @@ We use encrypted HTTPS connections, signed sessions, access controls, private ob
 
 Depending on where you live, you may have rights to request access, correction, deletion, restriction, portability, or an objection to certain processing. You may also withdraw consent where processing relies on consent and complain to your local data-protection authority.
 
-Because PicNum has no account or email login, we cannot find backend records from your email address alone. To request deletion, use **Report a Problem** in the app and keep the diagnostic section containing the client-ID suffix, or contact support with that suffix and an approximate conversion date. We will verify the request, delete eligible server artifacts and records, and explain any limited transaction or security records that must be retained.
+Because PicNum has no account or email login, we cannot find backend records from your email address alone. To request deletion, use **Report a Problem** in the app and keep the diagnostic section containing the client-ID suffix, or contact support with that suffix and an approximate conversion date. We will verify the request, delete eligible server artifacts and records, ask PostHog to delete the analytics events for your install identifier, and explain any limited transaction or security records that must be retained.
 
 To remove locally stored paintings and progress, delete the app and its local data through iOS. Keychain data can persist after app deletion according to iOS behavior; contact support if you also want associated server records removed.
 
