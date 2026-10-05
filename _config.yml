@@ -3,3 +3,9 @@ description: Turn photos into personal paint-by-numbers artwork
 
 # App Store product URL used by the home page badge.
 app_store_url: "https://apps.apple.com/app/picnum-paint-by-number/id6811361960"
+
+# PostHog web analytics (EU region). The project token is a public, write-only key.
+# Leave it empty to turn analytics off. See _includes/analytics.html.
+posthog_project_token: "phc_qfAXwwYVP35DeBNQm6t9hzLg5bzzB7bhDCVBZApL6Zx7"
+posthog_host: "https://eu.i.posthog.com"
+posthog_assets_host: "https://eu-assets.i.posthog.com"
