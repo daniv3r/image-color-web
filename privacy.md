@@ -19,6 +19,8 @@ This policy explains how PicNum collects, uses, stores, shares, and deletes info
 
 **Anonymous product analytics** — the app and our server send anonymous usage events to PostHog, such as a photo conversion finishing, how far a painting has progressed, the paywall being shown, and a purchase being completed. Each event carries an install identifier made from your anonymous client identifier by one-way hashing, the app version and build, the difficulty or screen involved, and whether the build is a test build. Events never include your photos, paintings, names, email address, device model, or operating-system details, and PostHog is configured not to create user profiles or to store your IP address or location. The app does not ask for permission to track you.
 
+**Website analytics** — the PicNum website counts page views and taps on the App Store button with the same provider, in the same anonymous way: no cookies or local storage, no user profiles, no IP address or location stored, and no tracking across sites. Visitors whose browser sends Do Not Track or Global Privacy Control are not counted.
+
 **Diagnostics and support messages** — the app writes diagnostic events to Apple's local logging system. If you choose **Report a Problem**, the message can include the app and OS versions, device model, environment, timestamp, context, and shortened client and job identifiers. It does not automatically attach your photo or painting. Email providers process anything you choose to send.
 
 **Technical service data** — our servers and infrastructure providers may process an IP address, request time, requested endpoint, response status, and security or error information needed to operate and protect the service.
