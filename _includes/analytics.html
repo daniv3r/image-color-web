@@ -1,7 +1,7 @@
 {% if site.posthog_project_token and site.posthog_project_token != "" %}
 {%- comment -%}
   Anonymous, cookieless page analytics. No cookies or local storage (persistence: memory), no
-  person profiles, no IP address, no session replay, autocapture or feature flags. Visitors
+  person profiles, no IP address or location lookup, no session replay, autocapture or feature flags. Visitors
   who send Do Not Track or Global Privacy Control are not counted. Keep the privacy policy
   in step with any change here.
 {%- endcomment -%}
@@ -22,8 +22,10 @@
       disable_session_recording: true,
       disable_surveys: true,
       advanced_disable_flags: true,
+      property_denylist: ["$raw_user_agent"],
       loaded: function (ph) {
-        ph.register({ environment: location.hostname.endsWith("github.io") ? "production" : "development", test: "false", channel: "web" });
+        // PostHog's IP-discard setting runs after the location lookup, so ask it to skip the lookup.
+        ph.register({ $geoip_disable: true, environment: location.hostname.endsWith("github.io") ? "production" : "development", test: "false", channel: "web" });
       }
     });
     document.addEventListener("click", function (event) {
