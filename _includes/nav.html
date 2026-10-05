@@ -7,5 +7,5 @@
       <li><a href="support.html">Support</a></li>
     </ul>
   </nav>
-  {% if site.app_store_url and site.app_store_url != "" %}<a class="btn btn-nav" href="{{ site.app_store_url }}">Download</a>{% endif %}
+  {% if site.app_store_url and site.app_store_url != "" %}<a class="btn btn-nav" href="{{ site.app_store_url | escape }}">Download</a>{% endif %}
 </header>
