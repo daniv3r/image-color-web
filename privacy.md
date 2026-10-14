@@ -2,7 +2,7 @@
 layout: default
 title: Privacy Policy
 description: How PicNum collects, uses, stores, and deletes photos and related app data.
-updated: October 5, 2026
+updated: October 14, 2026
 ---
 
 This policy explains how PicNum collects, uses, stores, shares, and deletes information when you use the app or contact support.
@@ -17,7 +17,7 @@ This policy explains how PicNum collects, uses, stores, shares, and deletes info
 
 **Purchases** — Apple processes App Store payments. RevenueCat sends purchase and entitlement information to PicNum so we can grant credits, prevent duplicate grants, process revocations or refunds, and troubleshoot purchase problems. PicNum does not receive your full payment-card details.
 
-**Anonymous product analytics** — the app and our server send anonymous usage events to PostHog, such as a photo conversion finishing, how far a painting has progressed, the paywall being shown, and a purchase being completed. Each event carries an install identifier made from your anonymous client identifier by one-way hashing, the app version and build, the difficulty or screen involved, and whether the build is a test build. Events never include your photos, paintings, names, email address, device model, or operating-system details, and PostHog is configured not to create user profiles or to store your IP address or location. The app does not ask for permission to track you.
+**Anonymous product analytics** — the app and our server send anonymous usage events to PostHog, such as a photo conversion finishing, how far a painting has progressed, the paywall being shown, and a purchase being completed. Each event carries an install identifier made from your anonymous client identifier by one-way hashing, the app version and build, the difficulty or screen involved, whether the build is a test build, and the country of your App Store account as a two-letter code (read from the App Store, not from your device location or your IP address). Events never include your photos, paintings, names, email address, device model, or operating-system details. PostHog is configured not to create user profiles or to store your IP address, city, or precise location. The app does not ask for permission to track you or to use your location.
 
 **Website analytics** — the PicNum website counts page views and taps on the App Store button with the same provider, in the same anonymous way: no cookies or local storage, no user profiles, no IP address or location stored, and no tracking across sites. Each page view includes the page address, the referring page, and general browser, operating-system, screen-size, language and time-zone information. Visitors whose browser sends Do Not Track or Global Privacy Control are not counted.
 
